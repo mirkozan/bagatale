@@ -1,0 +1,2 @@
+import { Component, inject } from '@angular/core'; import { RouterLink } from '@angular/router'; import { TranslationService } from '../../services/translation.service'; import { SeoService } from '../../services/seo.service';
+@Component({ selector:'app-home', imports:[RouterLink], templateUrl:'./home.html', styleUrl:'./home.scss' }) export class HomeComponent { readonly i18n=inject(TranslationService); constructor(seo:SeoService){seo.update('Bagatale Productions','Történetek, képek és hangok egy kreatív műhelyből.','/');} }
