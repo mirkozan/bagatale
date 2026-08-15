@@ -1,15 +1,22 @@
 <header class="header">
   <div class="header-inner container">
-    <a routerLink="/" class="brand" (click)="close()" aria-label="Bagatale Productions home"><span class="brand-mark">B</span><span>bagatale<span class="dot">.</span></span></a>
-    <button class="menu-button" (click)="open.update(v => !v)" [attr.aria-expanded]="open()" [attr.aria-label]="i18n.t('nav.menu')"><span></span><span></span></button>
+    <a routerLink="/" class="brand" (click)="close()" aria-label="Bagatale Productions home"><span
+      class="brand-mark">B</span><span>bagatale<span class="dot">.</span></span></a>
+    <button class="menu-button" (click)="open.update(v => !v)" [attr.aria-expanded]="open()"
+            [attr.aria-label]="i18n.t('nav.menu')"><span></span><span></span></button>
     <nav [class.is-open]="open()" aria-label="Main navigation">
-      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="close()">{{ i18n.t('nav.home') }}</a>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
+         (click)="close()">{{ i18n.t('nav.home') }}</a>
       <a routerLink="/about" routerLinkActive="active" (click)="close()">{{ i18n.t('nav.about') }}</a>
       <a routerLink="/videos" routerLinkActive="active" (click)="close()">{{ i18n.t('nav.videos') }}</a>
       <a routerLink="/contact" routerLinkActive="active" (click)="close()">{{ i18n.t('nav.contact') }}</a>
       <span class="nav-divider"></span>
-      <button class="control" (click)="i18n.toggle()" [attr.aria-label]="i18n.language() === 'hu' ? 'Switch to English' : 'Váltás magyarra'">{{ i18n.language() === 'hu' ? 'EN' : 'HU' }}</button>
-      <button class="control theme-control" (click)="theme.toggle()" [attr.aria-label]="theme.dark() ? 'Switch to light mode' : 'Switch to dark mode'">{{ theme.dark() ? '☼' : '☾' }}</button>
+      <button class="control" (click)="i18n.toggle()"
+              [attr.aria-label]="i18n.language() === 'hu' ? 'Switch to English' : 'Váltás magyarra'">{{ i18n.language() === 'hu' ? 'EN' : 'HU' }}
+      </button>
+      <button class="control theme-control" (click)="theme.toggle()"
+              [attr.aria-label]="theme.dark() ? 'Switch to light mode' : 'Switch to dark mode'">{{ theme.dark() ? '☼' : '☾' }}
+      </button>
     </nav>
   </div>
 </header>

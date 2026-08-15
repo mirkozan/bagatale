@@ -1,1 +1,23 @@
-<div class="container"><section class="page-intro"><div class="eyebrow">{{i18n.t('videos.eyebrow')}}</div><h1>{{i18n.t('videos.title')}}</h1><p>{{i18n.t('videos.lead')}}</p></section><section class="video-grid section"><article class="video-card" *ngFor="let video of videos; let i = index"><div class="video-frame"><iframe [src]="url(video)" [title]="title(video)" loading="lazy" allowfullscreen></iframe></div><div class="video-info"><span class="video-number">0{{i+1}}</span><div><h2>{{title(video)}}</h2><p>{{desc(video)}}</p></div></div></article></section></div>
+<div class="container">
+  <section class="page-intro">
+    <div class="eyebrow">{{ i18n.t('videos.eyebrow') }}</div>
+    <h1>{{ i18n.t('videos.title') }}</h1>
+    <p>{{ i18n.t('videos.lead') }}</p>
+  </section>
+  <section class="video-grid section">
+    @for (video of videos; track video.id; let i = $index) {
+      <article class="video-card">
+        <div class="video-frame">
+          <iframe [src]="url(video)" [title]="title(video)" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <div class="video-info">
+          <span class="video-number">0{{ i + 1 }}</span>
+          <div>
+            <h2>{{ title(video) }}</h2>
+            <p>{{ desc(video) }}</p>
+          </div>
+        </div>
+      </article>
+    }
+  </section>
+</div>
