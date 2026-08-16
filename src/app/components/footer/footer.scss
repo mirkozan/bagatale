@@ -12,9 +12,15 @@
 }
 
 .footer-brand {
-  color: var(--text);
-  font-weight: 800;
-  letter-spacing: -.06em;
+  display: inline-block;
+}
+
+.footer-logo {
+  display: block;
+  width: 6rem;
+  height: 1.5rem;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .footer-brand span {

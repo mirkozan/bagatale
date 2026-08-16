@@ -1,7 +1,10 @@
 <footer class="footer">
   <div class="container footer-inner">
     <div>
-      <a routerLink="/" class="footer-brand">bagatale<span>.</span></a>
+      <a routerLink="/" class="footer-brand" aria-label="Bagatale Productions home"><img
+        class="footer-logo"
+        [src]="theme.dark() ? '/images/bagatale_logo_white.svg' : '/images/bagatale_logo_black.svg'"
+        alt="Bagatale Productions"></a>
       <p>{{ i18n.t('footer.line') }}</p></div>
     <div class="footer-meta"><span>© {{ 2026 }} Bagatale Productions</span><a
       routerLink="/contact">{{ i18n.t('nav.contact') }} <span>↗</span></a><a href="https://www.youtube.com/@Bagatale"
