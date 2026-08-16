@@ -1,7 +1,9 @@
 <header class="header">
   <div class="header-inner container">
     <a routerLink="/" class="brand" (click)="close()" aria-label="Bagatale Productions home"><img
-      class="brand-logo" src="/images/logo.svg" alt="Bagatale Productions"></a>
+      class="brand-logo"
+      [src]="theme.dark() ? '/images/bagatale_logo_white.svg' : '/images/bagatale_logo_black.svg'"
+      alt="Bagatale Productions"></a>
     <button class="menu-button" (click)="open.update(v => !v)" [attr.aria-expanded]="open()"
             [attr.aria-label]="i18n.t('nav.menu')"><span></span><span></span></button>
     <nav [class.is-open]="open()" aria-label="Main navigation">
