@@ -1,7 +1,7 @@
 <header class="header">
   <div class="header-inner container">
-    <a routerLink="/" class="brand" (click)="close()" aria-label="Bagatale Productions home"><span
-      class="brand-mark">B</span><span>bagatale<span class="dot">.</span></span></a>
+    <a routerLink="/" class="brand" (click)="close()" aria-label="Bagatale Productions home"><img
+      class="brand-logo" src="/images/logo.svg" alt="Bagatale Productions"></a>
     <button class="menu-button" (click)="open.update(v => !v)" [attr.aria-expanded]="open()"
             [attr.aria-label]="i18n.t('nav.menu')"><span></span><span></span></button>
     <nav [class.is-open]="open()" aria-label="Main navigation">
