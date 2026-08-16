@@ -12,26 +12,12 @@
   overflow: hidden
 }
 
-.portrait-shape {
-  position: absolute;
-  width: 65%;
-  height: 85%;
-  left: 18%;
-  bottom: -18%;
-  background: var(--blue);
-  border-radius: 48% 48% 0 0;
-  transform: rotate(10deg)
-}
-
-.portrait-shape:after {
-  content: '';
-  position: absolute;
-  width: 48%;
-  aspect-ratio: 1;
-  top: -25%;
-  left: 25%;
-  border-radius: 50%;
-  background: var(--blue)
+.portrait-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .portrait-note, .portrait-index {
