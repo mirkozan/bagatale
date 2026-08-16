@@ -21,7 +21,7 @@ a { color: inherit; text-decoration: none; }
 .container { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; }
 .eyebrow { color: var(--muted); font: 500 .72rem 'DM Mono', monospace; letter-spacing: .12em; text-transform: uppercase; }
 .page-intro { padding: 6rem 0 3rem; max-width: 780px; }
-.page-intro h1 { margin: .75rem 0 1rem; font-size: clamp(2.8rem, 8vw, 6rem); line-height: .97; letter-spacing: .005em; }
+.page-intro h1 { margin: .75rem 0 1rem; font-size: clamp(3.4rem, 7vw, 7.5rem); line-height: .88; letter-spacing: .005em; }
 .page-intro p { color: var(--muted); font-size: 1.1rem; line-height: 1.7; max-width: 600px; }
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: .65rem; border: 1px solid var(--text); padding: .9rem 1.2rem; border-radius: 999px; font-weight: 700; cursor: pointer; transition: transform .2s, background .2s; }
 .btn span { display: none; }
