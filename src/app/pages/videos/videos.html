@@ -15,7 +15,7 @@
           <span class="video-number">0{{ i + 1 }}</span>
           <div>
             <h2>{{ title(video) }}</h2>
-            <p>{{ desc(video) }}</p>
+          <p>{{ desc(video) }}@if (video.relatedUrl) { <a class="related-video-link" [href]="video.relatedUrl" target="_blank" rel="noopener noreferrer">{{ i18n.language() === 'hu' ? video.relatedLinkHu : video.relatedLinkEn }}</a>{{ i18n.language() === 'hu' ? ' látható' : '' }}. }</p>
           </div>
         </div>
       </article>
