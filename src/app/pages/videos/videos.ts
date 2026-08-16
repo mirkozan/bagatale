@@ -29,10 +29,10 @@ export class VideosComponent {
     relatedLinkEn: 'here'
   }, {
     id: 'ejpiqHvOSTI',
-    titleHu: 'Második videó',
-    titleEn: 'Second video',
-    descHu: 'Leírás hamarosan.',
-    descEn: 'Description coming soon.'
+    titleHu: 'Durmiotor Trail 2026',
+    titleEn: 'Durmiotor Trail 2026',
+    descHu: 'Egy baráti társaság Montenegróba utazott, hogy fusson egyet és jól érezze magát a Durmitor Nemzeti Parkban. Ez valami, amit nagyon szeretünk csinálni. Ez volt az első kísérletem arra, hogy egy teljes eseményt az elejétől a végéig lefedjek. A kihívás kedvemre való volt. Ezen első kísérlet eredménye ami itt látható.',
+    descEn: 'A group of friends went to Montenegro to run and have some fun in the Durmitor Natural Reserve. This is something we like to do. My first attempt to try to cover a whole event from start to finish. That might remain an everlasting challenge. This is the result of an exciting first attempt.'
   }];
 
   constructor(seo: SeoService) {
