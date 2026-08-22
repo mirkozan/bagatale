@@ -18,6 +18,13 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <script>
+    const githubPagesPath = sessionStorage.getItem('github-pages-path');
+    if (githubPagesPath) {
+      sessionStorage.removeItem('github-pages-path');
+      history.replaceState(null, '', githubPagesPath);
+    }
+  </script>
   <app-root></app-root>
 </body>
 </html>
